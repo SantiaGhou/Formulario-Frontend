@@ -26,6 +26,43 @@
                 <h1>Formulário de matrícula</h1>
                 <p>Preencha os dados abaixo para matricular seu filho na escola de educação infantil Estrelas do Amanhã.
                 </p>
+                <form method="post" enctype="multipart/form-data">
+                    <fieldset class ="child-info">
+                        <legend>Informações da criança</legend>
+                    
+                    
+                    <div class="input-wraper">
+                        <label for="name">Nome completo</label>
+                        <input type="text" id="name" placeholder="Qual nome da criança?">
+
+                    </div>
+                    
+                    <div class="input-wraper">
+                       <label for="birth-date">Data de nascimento</label>
+                       <input type="date" id="birth-date">
+                    </div>
+
+                    <div class="select-wraper">
+                        <label for="gender"></label>
+                        <select name="gender" id="gender">
+                            <option value="Female">Feminino</option>
+                            <option value="male">Masculino</option>
+                        </select>
+                    </div>
+
+                    <div class="text-area-wrapper">
+                        <label for="medical-info">Informações mêdicas</label>
+                        <textarea name="medical-info" id="medical-info" cols="30" rows="10" placeholder="a criança possui alguma condição mêdica?"></textarea>
+
+                    </div>
+                    <div class="droparea-wraper">
+                        <label for="photo">Foto</label>
+                        <input type="file" id="photo">
+                        <img src="/assets/icons/cloud-upload.svg" alt="">
+                        <p>Clique aqui para selecionar os arquivos</p>
+                    </div>
+                    </fieldset>
+                </form>
             </div>
         </main>
 
@@ -47,7 +84,6 @@
                 </header>
 
                 <img src="assets/ilustrations/pana.svg" alt="Ilustração de um professora com crianças prestando atenção">
-
             </div>
         </aside>
     </div>
