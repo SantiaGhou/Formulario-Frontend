@@ -36,3 +36,11 @@ input[type="date"]{
 select{
     background: url(/assets/icons/arrow-down-01.svg) no-repeat right .9rem center;
 }
+
+.addres .flex{
+    gap: 1.25rem;
+}
+.input-wrapper:has([disabled]){
+    opacity: .5;
+    cursor: not-allowed;
+}
